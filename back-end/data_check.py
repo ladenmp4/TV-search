@@ -1,6 +1,5 @@
 from CONSTANTS import API_URL
 
-show_info = {}
 
 def imgCheck(index):
     #Chec if shows cover image exists in the API
@@ -37,8 +36,11 @@ def ratingCheck(index):
 
 def showInfo(data):
     #Format and add items into the show_info dict created above
+    show_info = {}
+    pointer = 0
+
     for index in data:
-        show_info[index['show']['name']] = {
+        show_info[pointer] = {
             "name": index['show']['name'],
             "url": index['show']['url'],
             "image": imgCheck(index),
@@ -47,5 +49,6 @@ def showInfo(data):
             "summary": summaryCheck(index),
             "rating": ratingCheck(index)
         }
+        pointer = pointer + 1
         
     return show_info

@@ -46,6 +46,7 @@ body{
 }
 
 .informationBox{
+    width: 85%;
     margin-left: 10px;
     border: solid red;
 }
