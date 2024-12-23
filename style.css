@@ -1,0 +1,60 @@
+html {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: aliceblue;
+}
+
+body{
+    background: radial-gradient(
+		circle 382px at 50% 50.2%,
+		rgb(31, 33, 112) 0.1%,
+		rgba(3, 1, 50, 1) 100.2%
+	);
+}
+
+.container{
+    text-align:  center;
+}
+
+.results-box{
+    width: 100%;
+}
+
+.results-box article{
+    width: 80%;
+    padding: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    border: solid white;
+    border-radius: 15px;
+}
+
+.nameLink{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+    font-size: 15px;
+    width: 20%;
+    border: solid red;
+}
+
+.imageSummary{
+    margin-left: auto;
+    display: flex;
+    width: 100%;
+}
+
+.informationBox{
+    margin-left: 10px;
+    border: solid red;
+}
+
+.rating{
+    display: flex;
+    flex-direction: column;
+}
+
+.star{
+    color: gold;
+}
